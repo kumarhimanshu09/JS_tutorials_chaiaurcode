@@ -12,7 +12,7 @@ let userEmail;
 const id = Symbol('123')
 const anotherId = Symbol('123')
 
-console.log(id === anotherId);
+// console.log(id === anotherId);
 
 // const bigNumber = 2143534221524542124n
 
@@ -34,3 +34,33 @@ const myFunction = function(){
 }
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+
+
+//-------------------------------------------------------------------------------------------
+
+// Stack (Primitive), Heap (Non-Primitive)
+
+let myYoutubeName = "xyzdotcom"
+
+let anothername = myYoutubeName
+anothername = "buskyt"
+
+console.log(myYoutubeName);
+console.log(anothername);
+
+let userOne = {
+    email:"user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "none@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+// Difference between Stack and Heap.
+
